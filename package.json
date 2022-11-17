@@ -7,8 +7,9 @@
     "create-wasm-app": ".bin/erg_playground.js"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server"
+    "build": "webpack --config webpack.config.js && move dist docs",
+    "start": "webpack-dev-server",
+    "deploy": "gh-pages -d docs"
   },
   "repository": {
     "type": "git",
@@ -26,8 +27,11 @@
     "url": "https://github.com/erg-lang/erg-playground/issues"
   },
   "homepage": "https://github.com/erg-lang/erg-playground#readme",
+  "dependencies": {
+    "gh-pages": "^1.2.0"
+  },
   "devDependencies": {
-    "erg-playground": "file:../pkg",
+    "erg-playground": "file:pkg",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5",
