@@ -1,2 +1,1 @@
-# erg-playground
-Erg playground
+# Erg Playground
