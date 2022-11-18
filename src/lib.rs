@@ -17,6 +17,7 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 pub struct Playground {
     transpiler: Transpiler,
     vm: Lazy<WASMVirtualMachine>,
+    // vm: WASMVirtualMachine,
     inited: bool,
 }
 
@@ -31,6 +32,7 @@ impl Playground {
     pub fn new() -> Self {
         Playground {
             transpiler: Transpiler::default(),
+            // vm: VMStore::init("term_vm".into(), None),
             vm: Lazy::new(|| VMStore::init("term_vm".into(), None)),
             inited: false,
         }

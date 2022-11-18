@@ -409,17 +409,17 @@
 /******/ 					"__wbindgen_memory": function() {
 /******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_memory"]();
 /******/ 					},
-/******/ 					"__wbindgen_closure_wrapper218": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper218"](p0i32,p1i32,p2i32);
+/******/ 					"__wbindgen_closure_wrapper226": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper226"](p0i32,p1i32,p2i32);
 /******/ 					},
-/******/ 					"__wbindgen_closure_wrapper219": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper219"](p0i32,p1i32,p2i32);
+/******/ 					"__wbindgen_closure_wrapper227": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper227"](p0i32,p1i32,p2i32);
 /******/ 					},
-/******/ 					"__wbindgen_closure_wrapper222": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper222"](p0i32,p1i32,p2i32);
+/******/ 					"__wbindgen_closure_wrapper230": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper230"](p0i32,p1i32,p2i32);
 /******/ 					},
-/******/ 					"__wbindgen_closure_wrapper988": function(p0i32,p1i32,p2i32) {
-/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper988"](p0i32,p1i32,p2i32);
+/******/ 					"__wbindgen_closure_wrapper996": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper996"](p0i32,p1i32,p2i32);
 /******/ 					}
 /******/ 				}
 /******/ 			};
@@ -522,7 +522,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"./pkg/erg_playground_bg.wasm":"9d47f9d6d9a2ee18750f"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"./pkg/erg_playground_bg.wasm":"4c208985a8c3ec0bfb11"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
