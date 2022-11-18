@@ -55,8 +55,371 @@
 /******/ 		"./pkg/erg_playground_bg.wasm": function() {
 /******/ 			return {
 /******/ 				"./erg_playground_bg.js": {
+/******/ 					"__wbindgen_object_drop_ref": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_object_drop_ref"](p0i32);
+/******/ 					},
+/******/ 					"__wbindgen_string_get": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_string_get"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbindgen_string_new": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_string_new"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_virtualmachine_new": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_virtualmachine_new"](p0i32);
+/******/ 					},
+/******/ 					"__wbindgen_cb_drop": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_cb_drop"](p0i32);
+/******/ 					},
+/******/ 					"__wbindgen_boolean_get": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_boolean_get"](p0i32);
+/******/ 					},
+/******/ 					"__wbindgen_number_get": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_number_get"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbindgen_is_object": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_is_object"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_new_7ffa02bfbc04beed": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_7ffa02bfbc04beed"](p0i32);
+/******/ 					},
+/******/ 					"__wbindgen_object_clone_ref": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_object_clone_ref"](p0i32);
+/******/ 					},
+/******/ 					"__wbindgen_is_function": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_is_function"](p0i32);
+/******/ 					},
+/******/ 					"__wbindgen_is_undefined": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_is_undefined"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_typeof_743177f72f6fdc29": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_typeof_743177f72f6fdc29"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbindgen_is_null": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_is_null"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_getprop_69de9677404c75d3": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_getprop_69de9677404c75d3"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_instanceof_ef87d3bd70f479d6": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_instanceof_ef87d3bd70f479d6"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_callmethod_ef8950daab16ff08": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_callmethod_ef8950daab16ff08"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_setprop_8d6ad1b2f63c650b": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_setprop_8d6ad1b2f63c650b"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_callfunc_cd2420ba90677c6c": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_callfunc_cd2420ba90677c6c"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_wrapclosure_e03ae4154b12b431": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_wrapclosure_e03ae4154b12b431"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_hasprop_5df6320485f97f26": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_hasprop_5df6320485f97f26"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_new_abda76e883ba8a5f": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_abda76e883ba8a5f"]();
+/******/ 					},
+/******/ 					"__wbg_stack_658279fe44541cf6": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_stack_658279fe44541cf6"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_error_f851667af71bcfc6": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_error_f851667af71bcfc6"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbindgen_number_new": function(p0f64) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_number_new"](p0f64);
+/******/ 					},
+/******/ 					"__wbg_set_ce5827ace4c694dc": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_set_ce5827ace4c694dc"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_instanceof_Window_acc97ff9f5d2c7b4": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_instanceof_Window_acc97ff9f5d2c7b4"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_document_3ead31dbcad65886": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_document_3ead31dbcad65886"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_cancelAnimationFrame_679ac3913d7f9b34": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_cancelAnimationFrame_679ac3913d7f9b34"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_requestAnimationFrame_4181656476a7d86c": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_requestAnimationFrame_4181656476a7d86c"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_fetch_0fe04905cccfc2aa": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_fetch_0fe04905cccfc2aa"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_querySelector_3628dc2c3319e7e0": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_querySelector_3628dc2c3319e7e0"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_set_992c1d31586b2957": function(p0i32,p1i32,p2i32,p3i32,p4i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_set_992c1d31586b2957"](p0i32,p1i32,p2i32,p3i32,p4i32);
+/******/ 					},
+/******/ 					"__wbg_getAttribute_3a1f0fb396184372": function(p0i32,p1i32,p2i32,p3i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_getAttribute_3a1f0fb396184372"](p0i32,p1i32,p2i32,p3i32);
+/******/ 					},
+/******/ 					"__wbg_setAttribute_d8436c14a59ab1af": function(p0i32,p1i32,p2i32,p3i32,p4i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_setAttribute_d8436c14a59ab1af"](p0i32,p1i32,p2i32,p3i32,p4i32);
+/******/ 					},
+/******/ 					"__wbg_log_4b5638ad60bdc54a": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_log_4b5638ad60bdc54a"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_instanceof_Response_eaa426220848a39e": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_instanceof_Response_eaa426220848a39e"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_arrayBuffer_4c27b6f00c530232": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_arrayBuffer_4c27b6f00c530232"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_json_eb16b12f372e850c": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_json_eb16b12f372e850c"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_text_1169d752cc697903": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_text_1169d752cc697903"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_headers_85824e993aa739bf": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_headers_85824e993aa739bf"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_newwithstrandinit_05d7180788420c40": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_newwithstrandinit_05d7180788420c40"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_now_d52810455f8773fb": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_now_d52810455f8773fb"]();
+/******/ 					},
+/******/ 					"__wbg_error_d57d54f6b50dbbb9": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_error_d57d54f6b50dbbb9"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_randomFillSync_6894564c2c334c42": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_randomFillSync_6894564c2c334c42"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_getRandomValues_805f1c3d65988a5a": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_getRandomValues_805f1c3d65988a5a"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_crypto_e1d53a1d73fb10b8": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_crypto_e1d53a1d73fb10b8"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_process_038c26bf42b093f8": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_process_038c26bf42b093f8"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_versions_ab37218d2f0b24a8": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_versions_ab37218d2f0b24a8"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_node_080f4b19d15bc1fe": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_node_080f4b19d15bc1fe"](p0i32);
+/******/ 					},
+/******/ 					"__wbindgen_is_string": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_is_string"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_require_78a3dcfbdba9cbce": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_require_78a3dcfbdba9cbce"]();
+/******/ 					},
+/******/ 					"__wbg_msCrypto_6e7d3e1f92610cbb": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_msCrypto_6e7d3e1f92610cbb"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_get_57245cc7d7c7619d": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_get_57245cc7d7c7619d"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_new_1d9a920c6bfc44a8": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_1d9a920c6bfc44a8"]();
+/******/ 					},
+/******/ 					"__wbg_newnoargs_b5b063fc6c2f0376": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_newnoargs_b5b063fc6c2f0376"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_new_268f7b7dd3430798": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_268f7b7dd3430798"]();
+/******/ 					},
+/******/ 					"__wbg_next_579e583d33566a86": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_next_579e583d33566a86"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_next_aaef7c8aa5e212ac": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_next_aaef7c8aa5e212ac"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_done_1b73b0672e15f234": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_done_1b73b0672e15f234"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_value_1ccc36bc03462d71": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_value_1ccc36bc03462d71"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_iterator_6f9d4f28845f426c": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_iterator_6f9d4f28845f426c"]();
+/******/ 					},
+/******/ 					"__wbg_get_765201544a2b6869": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_get_765201544a2b6869"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_call_97ae9d8645dc388b": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_call_97ae9d8645dc388b"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_new_0b9bfdd97583284e": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_0b9bfdd97583284e"]();
+/******/ 					},
+/******/ 					"__wbg_self_6d479506f72c6a71": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_self_6d479506f72c6a71"]();
+/******/ 					},
+/******/ 					"__wbg_window_f2557cc78490aceb": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_window_f2557cc78490aceb"]();
+/******/ 					},
+/******/ 					"__wbg_globalThis_7f206bda628d5286": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_globalThis_7f206bda628d5286"]();
+/******/ 					},
+/******/ 					"__wbg_global_ba75c50d1cf384f4": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_global_ba75c50d1cf384f4"]();
+/******/ 					},
+/******/ 					"__wbg_isArray_27c46c67f498e15d": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_isArray_27c46c67f498e15d"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_push_740e4b286702d964": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_push_740e4b286702d964"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_instanceof_ArrayBuffer_e5e48f4762c5610b": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_instanceof_ArrayBuffer_e5e48f4762c5610b"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_isView_5c280fb08c72f3f8": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_isView_5c280fb08c72f3f8"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_values_e42671acbf11ec04": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_values_e42671acbf11ec04"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_instanceof_Error_56b496a10a56de66": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_instanceof_Error_56b496a10a56de66"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_new_8d2af00bc1e329ee": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_8d2af00bc1e329ee"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_message_fe2af63ccc8985bc": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_message_fe2af63ccc8985bc"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_name_48eda3ae6aa697ca": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_name_48eda3ae6aa697ca"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_toString_73c9b562dccf34bd": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_toString_73c9b562dccf34bd"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_apply_22a3220d244124da": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_apply_22a3220d244124da"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_call_168da88779e35f61": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_call_168da88779e35f61"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_name_da379f055623f0d3": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_name_da379f055623f0d3"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_set_933729cf5b66ac11": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_set_933729cf5b66ac11"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_isSafeInteger_dfa0593e8d7ac35a": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_isSafeInteger_dfa0593e8d7ac35a"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_getTime_cb82adb2556ed13e": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_getTime_cb82adb2556ed13e"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_getTimezoneOffset_89bd4275e1ca8341": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_getTimezoneOffset_89bd4275e1ca8341"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_new0_a57059d72c5b7aee": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new0_a57059d72c5b7aee"]();
+/******/ 					},
+/******/ 					"__wbg_instanceof_Object_595a1007518cbea3": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_instanceof_Object_595a1007518cbea3"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_create_679a02dfb5b55d3b": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_create_679a02dfb5b55d3b"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_entries_65a76a413fc91037": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_entries_65a76a413fc91037"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_toString_7be108a12ef03bc2": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_toString_7be108a12ef03bc2"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_new_3f18c1e01b7aae66": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_3f18c1e01b7aae66"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_new_db254ae0a1bb0ff5": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_db254ae0a1bb0ff5"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_instanceof_Promise_8f075b2904633ce9": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_instanceof_Promise_8f075b2904633ce9"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_new_9962f939219f1820": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_9962f939219f1820"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_reject_72477563edad55b7": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_reject_72477563edad55b7"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_resolve_99fe17964f31ffc0": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_resolve_99fe17964f31ffc0"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_then_11f7a54d67b4bfad": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_then_11f7a54d67b4bfad"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_then_cedad20fbbd9418a": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_then_cedad20fbbd9418a"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_buffer_3f3d764d4747d564": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_buffer_3f3d764d4747d564"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_newwithbyteoffsetandlength_d9aa266703cb98be": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_newwithbyteoffsetandlength_d9aa266703cb98be"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_new_8c3f0052272a457a": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_8c3f0052272a457a"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_set_83db9690f9353e79": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_set_83db9690f9353e79"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_length_9e1ae1900cb0fbd5": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_length_9e1ae1900cb0fbd5"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_instanceof_Uint8Array_971eeda69eb75003": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_instanceof_Uint8Array_971eeda69eb75003"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_newwithlength_f5933855e4f48a19": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_newwithlength_f5933855e4f48a19"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_buffer_21310ea17257b0b4": function(p0i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_buffer_21310ea17257b0b4"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_subarray_58ad4efbb5bcb886": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_subarray_58ad4efbb5bcb886"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_slice_49497b5040938ef1": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_slice_49497b5040938ef1"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_new_560e92ba7b82d97c": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_new_560e92ba7b82d97c"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_apply_75f7334893eef4ad": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_apply_75f7334893eef4ad"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_construct_603d2c5863aae443": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_construct_603d2c5863aae443"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_construct_6f6bc9f66cda61d1": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_construct_6f6bc9f66cda61d1"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_has_8359f114ce042f5a": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_has_8359f114ce042f5a"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_set_bf3f89b92d5a34bf": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbg_set_bf3f89b92d5a34bf"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbindgen_debug_string": function(p0i32,p1i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_debug_string"](p0i32,p1i32);
+/******/ 					},
 /******/ 					"__wbindgen_throw": function(p0i32,p1i32) {
 /******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_throw"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbindgen_memory": function() {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_memory"]();
+/******/ 					},
+/******/ 					"__wbindgen_closure_wrapper218": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper218"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbindgen_closure_wrapper219": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper219"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbindgen_closure_wrapper222": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper222"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbindgen_closure_wrapper988": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["./pkg/erg_playground_bg.js"].exports["__wbindgen_closure_wrapper988"](p0i32,p1i32,p2i32);
 /******/ 					}
 /******/ 				}
 /******/ 			};
@@ -159,7 +522,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"./pkg/erg_playground_bg.wasm":"d21509f2e3bc63710e73"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"./pkg/erg_playground_bg.wasm":"9d47f9d6d9a2ee18750f"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {

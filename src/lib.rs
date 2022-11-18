@@ -1,8 +1,9 @@
 mod utils;
 
 use wasm_bindgen::prelude::*;
-use erg_compiler::build_hir::HIRBuilder;
+use erg_compiler::transpile::Transpiler;
 use erg_common::traits::Runnable;
+use rustpython_wasm::{VMStore, WASMVirtualMachine};
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
@@ -11,9 +12,10 @@ use erg_common::traits::Runnable;
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
-#[derive(Debug)]
+// #[derive()]
 pub struct Playground {
-    builder: HIRBuilder,
+    transpiler: Transpiler,
+    vm: WASMVirtualMachine,
 }
 
 impl Default for Playground {
@@ -25,22 +27,33 @@ impl Default for Playground {
 #[wasm_bindgen]
 impl Playground {
     pub fn new() -> Self {
-        Playground {
-            builder: HIRBuilder::default(),
-        }
+        let pg = Playground {
+            transpiler: Transpiler::default(),
+            vm: VMStore::init("term_vm".into(), None),
+        };
+        pg.vm.exec_single("from collections import namedtuple as NamedTuple__", None).unwrap();
+        pg
+    }
+
+    pub fn set_stdout(&mut self, stdout: JsValue) {
+        self.vm.set_stdout(stdout).unwrap();
     }
 
     pub fn start_message(&self) -> String {
-        self.builder.start_message().replace("Erg HIR builder", "Erg Playground (experimental)")
+        self.transpiler.start_message().replace("Erg transpiler", "Erg Playground (experimental)")
     }
 
     pub fn eval(&mut self, input: &str) -> String {
-        match self.builder.build(input.to_string(), "eval") {
-            Ok(artifact) => {
-                artifact.hir.to_string()
+        match self.transpiler.transpile(input.to_string(), "eval") {
+            Ok(script) => {
+                let code = script.code.replace("from collections import namedtuple as NamedTuple__\n", "");
+                match self.vm.exec_single(&code, None) {
+                    Ok(val) => val.as_string().unwrap_or_default(),
+                    Err(err) => format!("<<RuntimeError>>{}\n{}", code, err.as_string().unwrap_or_default()),
+                }
             },
-            Err(artifact) => {
-                format!("<<ErgPlayGroundError>>{}", artifact.errors)
+            Err(errors) => {
+                format!("<<CompileError>>{errors}")
             },
         }
     }

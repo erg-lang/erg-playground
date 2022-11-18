@@ -14,6 +14,7 @@ default = ["console_error_panic_hook"]
 wasm-bindgen = "0.2.63"
 erg_common = { git = "https://github.com/erg-lang/erg", version = "0.5.12" }
 erg_compiler = { git = "https://github.com/erg-lang/erg", version = "0.5.12" }
+rustpython_wasm = { git = "https://github.com/rustpython/rustpython", version = "0.1.2" }
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
