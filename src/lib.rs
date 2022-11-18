@@ -4,6 +4,7 @@ use wasm_bindgen::prelude::*;
 use erg_compiler::transpile::Transpiler;
 use erg_common::traits::Runnable;
 use rustpython_wasm::{VMStore, WASMVirtualMachine};
+use once_cell::sync::Lazy;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
@@ -15,7 +16,8 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 // #[derive()]
 pub struct Playground {
     transpiler: Transpiler,
-    vm: WASMVirtualMachine,
+    vm: Lazy<WASMVirtualMachine>,
+    inited: bool,
 }
 
 impl Default for Playground {
@@ -27,12 +29,16 @@ impl Default for Playground {
 #[wasm_bindgen]
 impl Playground {
     pub fn new() -> Self {
-        let pg = Playground {
+        Playground {
             transpiler: Transpiler::default(),
-            vm: VMStore::init("term_vm".into(), None),
-        };
-        pg.vm.exec_single("from collections import namedtuple as NamedTuple__", None).unwrap();
-        pg
+            vm: Lazy::new(|| VMStore::init("term_vm".into(), None)),
+            inited: false,
+        }
+    }
+
+    pub fn initialize(&mut self) {
+        self.vm.exec_single("from collections import namedtuple as NamedTuple__", None).unwrap();
+        self.inited = true;
     }
 
     pub fn set_stdout(&mut self, stdout: JsValue) {
@@ -47,6 +53,9 @@ impl Playground {
         match self.transpiler.transpile(input.to_string(), "eval") {
             Ok(script) => {
                 let code = script.code.replace("from collections import namedtuple as NamedTuple__\n", "");
+                if !self.inited {
+                    self.initialize();
+                }
                 match self.vm.exec_single(&code, None) {
                     Ok(val) => val.as_string().unwrap_or_default(),
                     Err(err) => format!("<<RuntimeError>>{}\n{}", code, err.as_string().unwrap_or_default()),
