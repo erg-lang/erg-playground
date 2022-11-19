@@ -8,9 +8,13 @@ const ascii_art = `
 ██▄ █▀▄ █▄█   █▀▀ █▄▄ █▀█  █  █▄█ █▀▄ █▄█ █▄█ █ ▀█ █▄▀
 
 `;
+const additional = `
+Web-IDE is here: https://erg-lang.org/web-ide/
+
+`;
 const settings = {
     prompt: ">>> ",
-    greetings: ascii_art + playground.start_message() + "\n",
+    greetings: ascii_art + additional + playground.start_message() + "\n",
 };
 const action = function(command, term) {
     playground.set_stdout((data) => term.echo(data));
