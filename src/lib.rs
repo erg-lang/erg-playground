@@ -6,12 +6,6 @@ use erg_common::traits::Runnable;
 use rustpython_wasm::{VMStore, WASMVirtualMachine};
 use once_cell::sync::Lazy;
 
-// When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
-// allocator.
-#[cfg(feature = "wee_alloc")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
-
 #[wasm_bindgen]
 // #[derive()]
 pub struct Playground {
@@ -30,6 +24,8 @@ impl Default for Playground {
 #[wasm_bindgen]
 impl Playground {
     pub fn new() -> Self {
+        #[cfg(feature = "console_error_panic_hook")]
+        console_error_panic_hook::set_once();
         Playground {
             transpiler: Transpiler::default(),
             // vm: VMStore::init("term_vm".into(), None),
@@ -54,13 +50,15 @@ impl Playground {
     pub fn eval(&mut self, input: &str) -> String {
         match self.transpiler.transpile(input.to_string(), "eval") {
             Ok(script) => {
-                let code = script.code.replace("from collections import namedtuple as NamedTuple__\n", "");
+                let code = script.object.code()
+                    .replace("from collections import namedtuple as NamedTuple__\n", "")
+                    .replace("    import warnings\n    warnings.warn(\"`typing.Union` is not available. Please use Python 3.8+.\")\n", "");
                 if !self.inited {
                     self.initialize();
                 }
                 match self.vm.exec_single(&code, None) {
                     Ok(val) => val.as_string().unwrap_or_default(),
-                    Err(err) => format!("<<RuntimeError>>{}\n{}", code, err.as_string().unwrap_or_default()),
+                    Err(err) => format!("<<RuntimeError>>{:?}\ncode:\n{code}", err),
                 }
             },
             Err(errors) => {

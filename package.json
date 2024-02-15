@@ -7,8 +7,10 @@
     "erg-web-repl": ".bin/erg_web_repl.js"
   },
   "scripts": {
-    "full_build": "wasm-pack build && webpack --config webpack.config.js && move dist docs",
-    "build": "webpack --config webpack.config.js && move dist docs",
+    "full_build": "rm -rf dist docs && wasm-pack build && webpack --config webpack.config.js && mv dist docs",
+    "build": "rm -rf dist docs && webpack --config webpack.config.js && mv dist docs",
+    "full_build_win": "wasm-pack build && webpack --config webpack.config.js && move dist docs",
+    "build_win": "webpack --config webpack.config.js && move dist docs",
     "start": "webpack-dev-server"
   },
   "repository": {
@@ -28,10 +30,10 @@
   },
   "homepage": "https://github.com/erg-lang/web-repl#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^5.0.0",
     "erg-playground": "file:pkg",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5",
-    "copy-webpack-plugin": "^5.0.0"
+    "webpack": "^4.47.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.1.5"
   }
 }

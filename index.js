@@ -28,7 +28,7 @@ const action = function(command, term) {
         result = result.replace("<<RuntimeError>>", "").split("\n");
         let code = result[0];
         result = result.slice(1).join("\n");
-        term.error(`invalid code:\n${code}`);
+        term.error(`error:\n${code}`);
         term.error(result);
     } else if (result.length > 0) {
         term.echo(result);
